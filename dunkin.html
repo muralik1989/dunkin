@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .partition {
+            box-sizing: border-box;
+            width: 50%;
+            height: 50vh; /* 50% of the viewport height */
+            overflow: hidden;
+            border: 1px solid #333; /* Add border styling */
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio while covering the container */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Partition 1: Sample Image -->
+    <div class="partition">
+        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/df2de7977509b3697cd12d679c8571c2/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg" alt="Sample Image 1">
+    </div>
+
+    <!-- Partition 2: Sample Image -->
+    <div class="partition">
+        <img src="https://mms.businesswire.com/media/20220427005646/en/1434611/5/Dunkin%27_Early_Summer_Group_Image.jpg" alt="Sample Image 2">
+    </div>
+
+    <!-- Partition 3: Sample Image -->
+    <div class="partition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZw3HnOXZsDDha9-Dk454r_eAivahdoqF1Vc0MGtB3Q&s" alt="Sample Image 3">
+    </div>
+
+    <!-- Partition 4: YouTube Video -->
+    <div class="partition">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tzKnhZPYGzc?autoplay=0&loop=1" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+
+</body>
+</html>
